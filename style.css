@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/imgBg.jpeg );
+    background-repeat: no-repeat;   /* Impede a repetição da imagem */
+    background-size: cover;         /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center top;    /* Centraliza a imagem no fundo */
+    background-attachment: fixed;   /* Mantém a imagem fixa durante o rolar da página */
+}
+body::after {
+    content: "";                    /* Cria o pseudo-elemento */
+    position: fixed;             /* Posiciona o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);  /* Preto com 50% de opacidade */
+    z-index: -1;                     /* Garante que o pseudo-elemento ficará sobre a imagem */
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+.imgLogo {
+    width: 4.5rem;
+    max-height: 100%;
+  }
+ 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #000000;
+    height: 8vh;
+    z-index: 10;
+    position: relative;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  .section--inicio{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  .txtPrincipal{
+    color: white;
+    font-size: 4.5rem;
+  }
+  .txtSecundario{
+    color: white;
+    font-size: 1.5rem;
+  }
+  .div--txtInicio{
+    padding-right: 2rem;
+  }
+  .logoInicio{
+    width: auto;
+    height: 20rem;
+    opacity: 0.9;
+    filter: contrast(150%); /* Aumenta o contraste da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  
+  .section--servicos {
+    background-color: black;
+    display: flex;
+    height: 20rem;
+    padding: 3rem;
+    margin: 0 5rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+    margin-top: -5rem;
+    position: relative;
+    margin-bottom: 2rem;
+   
+
+}
+
+
+.precos-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.precos-texto {
+    flex: 1;
+    color: white;
+}
+
+.titulo-precos {
+    font-size: 24px;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.precos-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.precos-texto li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.precos-imagens {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imagem-servico {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section--informacoes{
+  background-color: red;
+}
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
