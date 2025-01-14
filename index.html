@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="/images/imgBarb.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
 </head>
 <body>
 
@@ -46,30 +50,53 @@
         
       </section>
 
-      <section id="servico" class="section--servicos">
+      <section class="servicos" id="servicos">
 
-          <div class="precos-content">
-              <div class="precos-texto">
-                  <h2 class="titulo-precos">Serviços e Preços</h2>
-                  <ul>
-                      <li>Corte de Cabelo - R$30,00</li>
-                      <li>Barba - R$20,00</li>
-                      <li>Corte + Barba - R$45,00</li>
-                      <li>Sobrancelha - R$15,00</li>
-                  </ul>
-              </div>
+        <h2 class="txtServicos">Nossos Serviços</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
              
-          </div>
-      
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Corte</h3>
+              <p class="precoServico">35 R$</p>  
+            </div>
+
+            <div class="swiper-slide">
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Barba</h3>
+              <p class="precoServico">20 R$</p>  
+            </div>
+
+            <div class="swiper-slide">
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Sobrancelha</h3>
+              <p class="precoServico">10 R$</p>  
+            </div>
+
+            <div class="swiper-slide">
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Corte</h3>
+              <p class="precoServico">35 R$</p>  
+            </div>
         
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+        
+        </div>
+
       </section>
 
-      <section class="section--informacoes">
-      
-        <h1>Testeeee</h1>
-
-      </section>
-      <script src="mobile.js"></script>
-      
+  
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/javascript/mobile.js"></script>
+      <script src="javascript/carrossel.js"></script>
 </body>
-</html>
+</html> 
