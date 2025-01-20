@@ -1,17 +1,34 @@
 .swiper {
     width: 100%;
-    height: 300px;
-    max-width: 600px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza o swiper */
-  }
-.swiper-button-prev,
-.swiper-button-next{
-    background-color: white;
-    width: 25px;
-    height: 25px;
-    color: pink;
+    height: 20rem;
+    max-width: 60rem; /* Limita a largura máxima */
+    margin-bottom: 5rem;
+    position: relative;
     
+  }
+/* Estilos das setas */
+.swiper-button-prev,
+.swiper-button-next {
+
+    color: white;
+
 }
+
+  
+  .swiper-button-next,
+  .swiper-.swiper-button-prev {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(white);
+  }
+  
+  .swiper-button-next {
+    right: 0;
+  }
+  
+  .swiper-button-prev {
+    left: 0;
+  }
 .txtServicos{
     display: flex;
     flex-direction: column;
@@ -24,6 +41,8 @@
 
 .precoServico{
     text-align: center;
+    font-size: 1.5rem;
+
 }
 .swiper-slide{
    
@@ -31,20 +50,32 @@
     flex-direction: column;
     color: #C5A880;
     background-color: #532E1C; /* ou a cor de fundo desejada */
-    width: 80rem;
-    padding: 20px;
+    width: 230rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     text-align: center;
+
+    
+    
+
 }
 .imgServicos{
-    height: 8rem;
+    height: 50%;
     width: 100%;
     object-fit: cover;
     padding: 0;
-    align-items: center;
+    border-radius: 0.6rem 0.6rem 0 0;
+    
 }
 #servicos{
-    background-color: black;
+    background-color: black;    
+    height: 80%;
+}
+
+.nomeServico {
+    font-size: 1.8rem;
+    color: #C5A880;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
