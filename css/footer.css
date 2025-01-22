@@ -1,0 +1,41 @@
+.footer{
+    background-color: #423F3E;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+.txtContato{
+    color: white;
+    font-size: 3rem;
+}
+.cont-contato{
+    margin-top: 5rem;
+    margin-left: -15rem;
+}
+.txtTelefone{
+    color: white;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    margin-left: 0.7rem;
+}
+.txtInstagram{
+    color: white;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+.cont-whatsapp{
+    margin-top: 5rem;
+    align-items: center;
+    margin-left: 0.7rem;
+}
+.cont-instagram{
+    margin-top: 4rem;
+    align-items: center;
+    margin-left: 0.7rem;
+}
+.img-wpp, .img-ig{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+}

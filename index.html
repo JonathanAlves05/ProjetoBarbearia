@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made in Favela</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/x-icon" href="/images/imgBarb.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+</head>
+<body>
+
+    <header>
+        <nav>
+        
+          <a class="logo" href="/">Emerson Barbearia</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="">Início</a></li>
+            <li><a href="#servico">Serviços</a></li>
+            <li><a href="#">Agendamento</a></li>
+            <li><a href="#">Informações</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section   class="section--inicio">
+        <div class="div--txtInicio">
+            <h1 class="txtPrincipal" >Bem-vindo à Emerson Barbearia!</h1>
+            <p class="txtSecundario" >Oferecemos cortes de cabelo e barba de qualidade em um ambiente acolhedor e profissional.
+             Se você está procurando por um corte moderno ou tradicional, temos tudo o que você precisa. 
+             Agende seu horário agora mesmo e experimente o melhor atendimento!</p>
+        </div>
+
+        <div>
+            <img class="logoInicio" src="images/imgBarb.png" alt="">
+        </div>
+        
+      </section>
+
+      <section class="servicos" id="servicos">
+
+        <h2 class="txtServicos">Nossos Serviços</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+             
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Corte</h3>
+              <p class="precoServico">35 R$</p>  
+            </div>
+
+            <div class="swiper-slide">
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Barba</h3>
+              <p class="precoServico">20 R$</p>  
+            </div>
+
+            <div class="swiper-slide">
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Sobrancelha</h3>
+              <p class="precoServico">10 R$</p>  
+            </div>
+
+            <div class="swiper-slide">
+              <img class="imgServicos" src="images/imgCorte.jpg" alt="">
+              <h3 class="nomeServico">Corte</h3>
+              <p class="precoServico">35 R$</p>  
+            </div>
+        
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+        
+        </div>
+
+      </section>
+
+      <footer class="footer">
+        <div class="cont-contato">
+          <h2 class="txtContato">Contato</h2>
+          <div class="cont-whatsapp">
+            <a href="#"><img src="images/logoWpp.png" alt="Logo do Whatsapp" class="img-wpp"></a>
+            <p class="txtTelefone">(11) 98990-6476</p>
+          </div>
+
+          <div class="cont-instagram">
+            <a href="#"><img src="images/logoInstagram.png" alt="Logo do instagram" class="img-ig"></a>
+            <p class="txtInstagram">@emersonbarbearia</p>
+          </div>
+        </div>
+  
+        <div>
+          <div class="container__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.491654358054!2d-35.24563642587861!3d-7.843498877935784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aba0441263b383%3A0x557bdcbfb608010d!2sjunior%20barbeiro!5e0!3m2!1spt-BR!2sbr!4v1733569751303!5m2!1spt-BR!2sbr"
+              width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe><!-- mapa -->
+          </div><!-- conteiner mapa -->
+          <div>
+            <img src="images/logoLocalização.png" alt="Logo da Localização">
+            <p>Rua Riverton 40-Céu Azul</p>
+            <p>Próximo a estação Varginha</p>
+          </div>
+        </div>
+      </footer>
+
+  
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/javascript/mobile.js"></script>
+      <script src="javascript/carrossel.js"></script>
+</body>
+</html> 
